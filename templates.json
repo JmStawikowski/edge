@@ -740,7 +740,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/portainer.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/portainer-agent/docker-stack.yml"
     }
   },
@@ -767,7 +767,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/ironfunctions.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/ironfunctions/docker-stack.yml"
     }
   },
@@ -780,7 +780,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/cockroachdb.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/cockroachdb/docker-stack.yml"
     }
   },
@@ -793,7 +793,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/wordpress.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/wordpress/docker-stack.yml"
     },
     "env": [
@@ -813,7 +813,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/wordpress.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/wordpress/docker-compose.yml"
     },
     "env": [
@@ -832,7 +832,7 @@
     "platform": "linux",
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/microsoft.png",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/microsoft-oms/docker-stack.yml"
     },
     "env": [
@@ -856,7 +856,7 @@
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/sematext_agent.png",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/sematext-agent-docker/docker-stack.yml"
     },
     "env": [
@@ -878,7 +878,7 @@
     "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/datadog_agent.png",
     "platform": "linux",
     "repository": {
-      "url": "https://github.com/portainer/templates",
+      "url": "https://raw.githubusercontent.com/JmStawikowski/edge/master/",
       "stackfile": "stacks/datadog-agent/docker-stack.yml"
     },
     "env": [
