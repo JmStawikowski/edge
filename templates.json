@@ -43,7 +43,7 @@
       {
         "name": "HTTPS_PROXY",
         "label": "HTTPS_PROXY",
-        "default": "http://gateway.schneider.zscaler.net:80",
+        "default": "$HTTP_PROXY",
         "preset": true
       },
       {
