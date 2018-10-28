@@ -103,6 +103,66 @@
     ],   
     "env": [
       {
+        "name": "HTTP_PROXY",
+        "label": "HTTP_PROXY",
+        "select": [
+          {
+            "text": "France: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80",
+            "default": true
+          },
+          {
+            "text": "Germany: http://force-proxy-eur.pac.schneider-electric.com:80",
+            "value": "http://force-proxy-eur.pac.schneider-electric.com:80"
+          },
+          {
+            "text": "North America: http://gateway.zscaler.net:80",
+            "value": "http://gateway.zscaler.net:80"
+          },
+          {
+            "text": "APAC: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80"
+          },
+          {
+            "text": "NO_PROXY",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "HTTPS_PROXY",
+        "label": "HTTPS_PROXY",
+        "select": [
+          {
+            "text": "France: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80",
+            "default": true
+          },
+          {
+            "text": "Germany: http://force-proxy-eur.pac.schneider-electric.com:80",
+            "value": "http://force-proxy-eur.pac.schneider-electric.com:80"
+          },
+          {
+            "text": "North America: http://gateway.zscaler.net:80",
+            "value": "http://gateway.zscaler.net:80"
+          },
+          {
+            "text": "APAC: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80"
+          },
+          {
+            "text": "NO_PROXY",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "name": "NO_PROXY",
+        "label": "NO_PROXY",
+        "default": "localhost,127.0.0.1",
+        "preset": true
+      },
+      {
         "name": "MQTT_SERVER_HOST",
         "label": "MQTT Server Host"
       },
