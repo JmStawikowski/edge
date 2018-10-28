@@ -1,6 +1,6 @@
 [
   {
-      "type": 3,      
+      "type": 1,
       "title": "Node-RED",
       "description": "A visual tool for wiring the Internet of Things.",
       "categories": ["webserver"],
@@ -31,12 +31,14 @@
       {
         "name": "HTTPS_PROXY",
         "label": "HTTPS_PROXY",
-        "default": "http://gateway.schneider.zscaler.net:80"
+        "default": "http://gateway.schneider.zscaler.net:80",
+        "preset": true
       },
       {
         "name": "NO_PROXY",
-        "label": "NO_PROXY",       
-        "default": "localhost,127.0.0.1"
+        "label": "NO_PROXY",
+        "default": "localhost,127.0.0.1",
+        "preset": true
       }
     ]
   },
@@ -85,7 +87,6 @@
         ]
       }
     ]
-
   },
   {
     "type": 1,
