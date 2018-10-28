@@ -11,7 +11,21 @@
       "ports": [
         "1880/tcp"
       ],
-    "volumes": [{"container": "/data"}]
+    "volumes": [{"container": "/data"}],
+    "env": [
+      {
+        "name": "HTTP_PROXY",
+        "set": "http://gateway.schneider.zscaler.net:80"
+      },
+      {
+        "name": "HTTPS_PROXY",
+        "set": "http://gateway.schneider.zscaler.net:80"
+      },
+      {
+        "name": "NO_PROXY",
+        "set": "localhost,127.0.0.1"
+      }
+    ]
   },
   {
     "type": 1,      
