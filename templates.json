@@ -6,11 +6,113 @@
       "categories": ["webserver"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Node-red-icon.png",    
-      "image": "nodered/node-red-docker:latest",  
+      "image": "nodered/node-red-docker:latest",
+      "restart_policy": "unless-stopped",
       "ports": [
         "1880/tcp"
       ],
     "volumes": [{"container": "/data"}]
+  },
+  {
+    "type": 1,      
+    "title": "Mosquitto",
+    "description": "Eclipse Mosquitto is an open source message broker which implements MQTT.",
+    "categories": ["docker"],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/mosquitto.png",    
+    "image": "eclipse-mosquitto:latest",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "1883/tcp",
+      "9001/tcp"
+    ]
+  },
+  {
+    "type": 1,
+    "title": "BMXDDI1602-MQTT",
+    "description": "Discrete input module - 16 inputs - 24 V DC",
+    "categories": ["docker"],
+    "platform": "linux",
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Schneider_Electric.png",      
+    "image": "nodered/node-red-docker:latest",
+    "restart_policy": "unless-stopped",    
+    "ports": [
+      "1880/tcp"
+    ],   
+    "env": [
+      {
+        "name": "MQTT_SERVER_HOST",
+        "label": "MQTT Server Host"
+      },
+      {
+        "name": "MQTT_SERVER_PORT",
+        "label": "MQTT Server Port"
+      },
+      {
+        "name": "PUB_CHANNEL_00",
+        "label": "Publish Channel 00"
+      },
+      {
+        "name": "PUB_CHANNEL_01",
+        "label": "Publish Channel 01"
+      },
+      {
+        "name": "PUB_CHANNEL_02",
+        "label": "Publish Channel 02"
+      },
+      {
+        "name": "PUB_CHANNEL_03",
+        "label": "Publish Channel 03"
+      },
+      {
+        "name": "PUB_CHANNEL_04",
+        "label": "Publish Channel 04"
+      },
+      {
+        "name": "PUB_CHANNEL_05",
+        "label": "Publish Channel 05"
+      },
+      {
+        "name": "PUB_CHANNEL_06",
+        "label": "Publish Channel 06"
+      },
+      {
+        "name": "PUB_CHANNEL_07",
+        "label": "Publish Channel 07"
+      },
+      {
+        "name": "PUB_CHANNEL_08",
+        "label": "Publish Channel 08"
+      },
+      {
+        "name": "PUB_CHANNEL_09",
+        "label": "Publish Channel 09"
+      },
+      {
+        "name": "PUB_CHANNEL_10",
+        "label": "Publish Channel 10"
+      },
+      {
+        "name": "PUB_CHANNEL_11",
+        "label": "Publish Channel 11"
+      },
+      {
+        "name": "PUB_CHANNEL_12",
+        "label": "Publish Channel 12"
+      },
+      {
+        "name": "PUB_CHANNEL_13",
+        "label": "Publish Channel 13"
+      },
+      {
+        "name": "PUB_CHANNEL_14",
+        "label": "Publish Channel 14"
+      },
+      {
+        "name": "PUB_CHANNEL_15",
+        "label": "Publish Channel 15"
+      }      
+    ]
   },
   {
     "type": 1,
