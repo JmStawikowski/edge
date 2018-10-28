@@ -36,15 +36,36 @@
           },
           {
             "text": "NO_PROXY",
-            "value": "a"
+            "value": ""
           }
         ]
       },
       {
         "name": "HTTPS_PROXY",
         "label": "HTTPS_PROXY",
-        "default": "$HTTP_PROXY",
-        "preset": true
+        "select": [
+          {
+            "text": "France: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80",
+            "default": true
+          },
+          {
+            "text": "Germany: http://force-proxy-eur.pac.schneider-electric.com:80",
+            "value": "http://force-proxy-eur.pac.schneider-electric.com:80"
+          },
+          {
+            "text": "North America: http://gateway.zscaler.net:80",
+            "value": "http://gateway.zscaler.net:80"
+          },
+          {
+            "text": "APAC: http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80"
+          },
+          {
+            "text": "NO_PROXY",
+            "value": ""
+          }
+        ]
       },
       {
         "name": "NO_PROXY",
