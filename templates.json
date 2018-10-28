@@ -36,14 +36,15 @@
           },
           {
             "text": "NO_PROXY",
-            "value": ""
+            "value": "a"
           }
         ]
       },
       {
         "name": "HTTPS_PROXY",
         "label": "HTTPS_PROXY",
-        "default": "http://gateway.schneider.zscaler.net:80"
+        "default": "http://gateway.schneider.zscaler.net:80",
+        "preset": true
       },
       {
         "name": "NO_PROXY",
