@@ -16,17 +16,17 @@
       {
         "name": "HTTP_PROXY",
         "label": "HTTP_PROXY",
-        "set": "http://gateway.schneider.zscaler.net:80"
+        "default": "http://gateway.schneider.zscaler.net:80"
       },
       {
         "name": "HTTPS_PROXY",
-        "label": "HTTPS_PROXY",        
-        "set": "http://gateway.schneider.zscaler.net:80"
+        "label": "HTTPS_PROXY",
+        "default": "http://gateway.schneider.zscaler.net:80"
       },
       {
         "name": "NO_PROXY",
-        "label": "NO_PROXY",        
-        "set": "localhost,127.0.0.1"
+        "label": "NO_PROXY",       
+        "default": "localhost,127.0.0.1"
       }
     ]
   },
