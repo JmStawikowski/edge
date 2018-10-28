@@ -15,14 +15,17 @@
     "env": [
       {
         "name": "HTTP_PROXY",
+        "label": "HTTP_PROXY",
         "set": "http://gateway.schneider.zscaler.net:80"
       },
       {
         "name": "HTTPS_PROXY",
+        "label": "HTTPS_PROXY",        
         "set": "http://gateway.schneider.zscaler.net:80"
       },
       {
         "name": "NO_PROXY",
+        "label": "NO_PROXY",        
         "set": "localhost,127.0.0.1"
       }
     ]
