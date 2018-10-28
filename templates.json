@@ -1,6 +1,6 @@
 [
   {
-      "type": 1,      
+      "type": 3,      
       "title": "Node-RED",
       "description": "A visual tool for wiring the Internet of Things.",
       "categories": ["webserver"],
@@ -11,7 +11,34 @@
       "ports": [
         "1880/tcp"
       ],
-    "volumes": [{"container": "/data"}]
+    "volumes": [{"container": "/data"}],
+    "env": [
+      {
+        "name": "HTTP_PROXY",
+        "label": "HTTP_PROXY",
+        "select": [
+          {
+            "text": "http://gateway.schneider.zscaler.net:80",
+            "value": "http://gateway.schneider.zscaler.net:80",
+            "default": true
+          },
+          {
+            "text": "No HTTP_PROXY",
+            "value": "null"
+          }
+        ]
+      },
+      {
+        "name": "HTTPS_PROXY",
+        "label": "HTTPS_PROXY",
+        "default": "http://gateway.schneider.zscaler.net:80"
+      },
+      {
+        "name": "NO_PROXY",
+        "label": "NO_PROXY",       
+        "default": "localhost,127.0.0.1"
+      }
+    ]
   },
   {
     "type": 1,      
@@ -25,7 +52,40 @@
     "ports": [
       "1883/tcp",
       "9001/tcp"
+    ],
+    "env": [
+      {
+        "name": "MYSQL_ROOT_PASSWORD",
+        "label": "Root password",
+        "description": "Password used by the root user."
+      },
+      {
+        "name": "ENV_VAR_WITH_DEFAULT_VALUE",
+        "default": "default_value",
+        "preset": true
+      },
+      {
+        "name": "ENV_VAR_WITH_SELECT_VALUE",
+        "label": "An environment variable",
+        "description": "A description for this env var",
+        "select": [
+          {
+            "text": "Yes, I agree",
+            "value": "Y",
+            "default": true
+          },
+          {
+            "text": "No, I disagree",
+            "value": "N"
+          },
+          {
+            "text": "Maybe",
+            "value": "YN"
+          }
+        ]
+      }
     ]
+
   },
   {
     "type": 1,
@@ -920,32 +980,11 @@
     },
     "env": [
       {
-        "name": "HTTP_PROXY",
-        "label": "HTTP_PROXY",
-        "select": [
-          {
-            "text": "http://gateway.schneider.zscaler.net:80",
-            "value": "http://gateway.schneider.zscaler.net:80",
-            "default": true
-          },
-          {
-            "text": "No HTTP_PROXY",
-            "value": "null"
-          }
-        ]
-      },
-      {
-        "name": "HTTPS_PROXY",
-        "label": "HTTPS_PROXY",
-        "default": "http://gateway.schneider.zscaler.net:80"
-      },
-      {
-        "name": "NO_PROXY",
-        "label": "NO_PROXY",       
-        "default": "localhost,127.0.0.1"
+        "name": "MYSQL_DATABASE_PASSWORD",
+        "label": "Database root password",
+        "description": "Password used by the MySQL root user."
       }
     ]
-
   },
   {
     "type": 2,
