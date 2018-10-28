@@ -33,7 +33,7 @@
     "description": "Discrete input module - 16 inputs - 24 V DC",
     "categories": ["docker"],
     "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Schneider_Electric.png",      
+    "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/BMXDDI1602.png",      
     "image": "nodered/node-red-docker:latest",
     "restart_policy": "unless-stopped",    
     "ports": [
