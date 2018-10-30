@@ -73,8 +73,7 @@
         "default": "localhost,127.0.0.1",
         "preset": true
       }
-    ],
-    "command": "npm start -- --userDir /data"
+    ]
   },
   {
     "type": 1,      
