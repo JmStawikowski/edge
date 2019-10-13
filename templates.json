@@ -6,7 +6,7 @@
       "categories": ["schneider-electric"],
       "platform": "linux",
       "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Node-red-icon.png",    
-      "image": "nodered/node-red-docker:latest",
+      "image": "nodered/node-red:latest-minimal",
       "restart_policy": "unless-stopped",
       "ports": [
         "1880/tcp"
