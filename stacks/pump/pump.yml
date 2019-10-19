@@ -18,13 +18,11 @@ services:
       - DEVICE_NODE={{.Node}}
       - DEVICE_NODE_ID={{.Node.ID}}
       - DEVICE_NODE_HOSTNAME={{.Node.Hostname}}
-
       - DEVICE_TASK={{.Task}}
       - DEVICE_TASK_NAME={{.Task.Name}}
       - DEVICE_TASK_SLOT={{.Task.Slot}}
-
       - DEVICE_SERVICE={{.Service}}
       - DEVICE_SERVICE_ID={{.Service.ID}}
       - DEVICE_SERVICE_NAME={{.Service.Name}}
       - DEVICE_SERVICE_LABELS={{.Service.Labels}}
-      
+     
