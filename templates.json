@@ -956,7 +956,7 @@
     "volumes": [{"container": "/data/contentbox/db"}, {"container": "/app/includes/shared/media"}]
   },
   {
-    "type": 2,
+    "type": 3,
     "title": "Pump",
     "description": "Manage all the Pump in your Swarm cluster",
     "note": "The agent will be deployed globally inside your cluster and available on port 8010.",
@@ -968,7 +968,6 @@
       "stackfile": "stacks/pump/pump.yml"
     }
   },
-  
   {
     "type": 2,
     "title": "Portainer Agent",
