@@ -1,6 +1,20 @@
 [
   {
       "type": 1,
+      "title": "Pump",
+      "description": "Manage Pump in your Device",    
+      "categories": ["schneider-electric"],
+      "platform": "linux",
+      "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Node-red-icon.png",    
+      "image": "digitalplant/pump:1.0.2-10-minimal-arm32v7",
+      "restart_policy": "unless-stopped",
+      "ports": [
+        "1880/tcp"
+      ],
+    "volumes": [{"container": "/data"}],
+  },
+  {
+      "type": 1,
       "title": "Node-RED",
       "description": "A visual tool for wiring the Internet of Things.",
       "categories": ["schneider-electric"],
