@@ -2,10 +2,10 @@
   {
       "type": 1,
       "title": "Pump",
-      "description": "Manage Pump in your Device",    
+      "description": "Manage Pump in your Device.",    
       "categories": ["schneider-electric"],
       "platform": "linux",
-      "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Node-red-icon.png",    
+      "logo": "https://raw.githubusercontent.com/JmStawikowski/edge/master/images/logos/Node-red-icon.png",
       "image": "digitalplant/pump:1.0.2-10-minimal-arm32v7",
       "restart_policy": "unless-stopped",
       "ports": [
