@@ -1,53 +1,5 @@
 [
   {
-    "type": 3,
-    "title": "Pump",
-    "description": "Manage all Pump in your Swarm cluster",
-    "note": "The Pump will be deployed globally inside your cluster.",
-    "categories": ["schneider-electric"],
-    "platform": "linux",
-    "logo": "https://raw.githubusercontent.com/JmStawikowski/templates/master/images/logos/Node-red-icon.png",
-    "repository": {
-      "url": "https://github.com/JmStawikowski/templates",
-      "stackfile": "stacks/pump/pump.yml"
-    },
-    "env": [
-        {
-          "name": "PORT",
-          "label": "PORT",
-          "default": "8010",
-          "preset": false
-        },
-        {
-          "name": "PROXY",
-          "label": "PROXY",
-          "select": [
-            {
-              "text": "France: http://gateway.schneider.zscaler.net:80",
-              "value": "http://gateway.schneider.zscaler.net:80"
-            },
-            {
-              "text": "Germany: http://force-proxy-eur.pac.schneider-electric.com:80",
-              "value": "http://force-proxy-eur.pac.schneider-electric.com:80"
-            },
-            {
-              "text": "North America: http://gateway.zscaler.net:80",
-              "value": "http://gateway.zscaler.net:80"
-            },
-            {
-              "text": "APAC: http://gateway.schneider.zscaler.net:80",
-              "value": "http://gateway.schneider.zscaler.net:80"
-            },
-            {
-              "text": "NO_PROXY",
-              "value": "",
-              "default": true
-            }
-          ]
-        }
-    ]
-  },  
-  {
       "type": 1,
       "title": "Node-RED",
       "description": "A visual tool for wiring the Internet of Things.",
