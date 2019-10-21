@@ -9,8 +9,7 @@
       "repository": {
         "url": "https://github.com/JmStawikowski/templates",
         "stackfile": "stacks/pump/pump.yml"
-      },    
-      "restart_policy": "unless-stopped",
+      },
       "ports": [
         "1880/tcp"
       ],
